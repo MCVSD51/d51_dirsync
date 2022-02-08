@@ -13,7 +13,7 @@ __test__ = False
 __unittest__ = True
 
 
-class DirSyncTestCase(unittest.TestCase):
+class D51_DirSyncTestCase(unittest.TestCase):
     """
     Base class for sync tests
 
@@ -33,8 +33,8 @@ class DirSyncTestCase(unittest.TestCase):
         for x in os.listdir('.'):
             self.rm(x)
 
-        # cleanup dirsync and test loggers
-        loggers = [logging.getLogger('dirsync')]
+        # cleanup d51_dirsync and test loggers
+        loggers = [logging.getLogger('d51_dirsync')]
         try:
             loggers.append(self._logger)
         except AttributeError:
@@ -64,7 +64,7 @@ class DirSyncTestCase(unittest.TestCase):
         logger = getattr(self, '_logger', None)
         if logger:
             return logger
-        self._logger = logging.getLogger('dirsync_test')
+        self._logger = logging.getLogger('d51_dirsync_test')
         self._logger.setLevel(logging.INFO)
         for h in self._logger.handlers:
             self._logger.removeHandler(h)

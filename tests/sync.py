@@ -2,13 +2,13 @@ import os
 
 from time import sleep
 
-from dirsync import sync
+from d51_dirsync import sync
 
-from ._base import DirSyncTestCase
+from ._base import D51_DirSyncTestCase
 from . import trees
 
 
-class SyncTestsFromSrc(DirSyncTestCase):
+class SyncTestsFromSrc(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple), )
 
@@ -41,7 +41,7 @@ class SyncTestsFromSrc(DirSyncTestCase):
         file1.close()
 
 
-class SyncTestsWithDest(DirSyncTestCase):
+class SyncTestsWithDest(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple),)
 
@@ -65,7 +65,7 @@ class SyncTestsWithDest(DirSyncTestCase):
         self.assertExists('src/dir')
         self.assertExists('dst/dir')
 
-class SyncTestsWithContent(DirSyncTestCase):
+class SyncTestsWithContent(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple),)
 

@@ -1,12 +1,12 @@
 import os
 
-from ._base import DirSyncTestCase
+from ._base import D51_DirSyncTestCase
 from . import trees
 
-from dirsync import sync
+from d51_dirsync import sync
 
 
-class DiffTests(DirSyncTestCase):
+class DiffTests(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple),)
 

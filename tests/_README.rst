@@ -1,4 +1,4 @@
-dirsync tests
+d51_dirsync tests
 =============
 
 If you are reading this, you're interested in contributing to this software.
@@ -11,7 +11,7 @@ especially if you're not familiar with zc.buildout and/or tox.
 The tests
 ---------
 
-dirsync uses nose_ for testing. All the tests are in the
+d51_dirsync uses nose_ for testing. All the tests are in the
 ``tests`` directory, and the nose test runner uses the ``all-modules`` option
 which is defined in ``tests/setup.cfg``. This means that any object which is
 not intended to contain tests (e.g. a base classes module) shall contain the

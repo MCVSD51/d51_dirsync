@@ -1,5 +1,5 @@
 """
-dirsync
+d51_dirsync
 Advanced directory tree synchronisation tool
 (c) 2014-2020 Thomas Khyn
 (c) 2003-2015 Anand B Pillai
@@ -10,7 +10,7 @@ from setuptools import setup, find_packages
 import os
 
 # imports __version__ and __version_info__ variables
-exec(open('dirsync/version.py').read())
+exec(open('d51_dirsync/version.py').read())
 
 INC_PACKAGES = __pkg_name__,  # string or tuple of strings
 EXC_PACKAGES = ()  # tuple of strings
@@ -32,7 +32,7 @@ setup(
     long_description=open(os.path.join('README.rst')).read(),
     author='Thomas Khyn',
     author_email='thomas@ksytek.com',
-    url='https://github.com/tkhyn/dirsync/',
+    url='https://github.com/tkhyn/d51_dirsync/',
     keywords=['directory', 'folder', 'update', 'synchronisation'],
     classifiers=[
         'Programming Language :: Python',
@@ -53,7 +53,7 @@ setup(
     install_requires=('six',),
     entry_points={
         'console_scripts': [
-            'dirsync = dirsync.run:from_cmdline'
+            'd51_dirsync = d51_dirsync.run:from_cmdline'
         ],
     }
 )

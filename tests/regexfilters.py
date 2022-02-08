@@ -1,12 +1,12 @@
 import os
 
-from ._base import DirSyncTestCase
+from ._base import D51_DirSyncTestCase
 from . import trees
 
-from dirsync import sync
+from d51_dirsync import sync
 
 
-class SimpleTests(DirSyncTestCase):
+class SimpleTests(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple),)
 
@@ -52,7 +52,7 @@ class SimpleTests(DirSyncTestCase):
         self.assertNotExists('dst/dir')
 
 
-class SimpleTestsWithDst(DirSyncTestCase):
+class SimpleTestsWithDst(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple),)
 
@@ -79,7 +79,7 @@ class SimpleTestsWithDst(DirSyncTestCase):
         self.assertExists('dst/dir')
 
 
-class PyprojTests(DirSyncTestCase):
+class PyprojTests(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.pyproj),)
 

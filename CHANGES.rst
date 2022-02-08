@@ -1,4 +1,4 @@
-dirsync - Changes
+d51_dirsync - Changes
 =================
 
 
@@ -15,13 +15,13 @@ Changed:
 - [backwards incompatible]: --nodirection option replaced by --twoway (-2)
 - [backwards incompatible]: --modtimeonly option replaced by --ctime
   (defaults to False)
-- A default ~/.dirsync config file is created on first run
+- A default ~/.d51_dirsync config file is created on first run
 
 2.2.1 (19-07-2015)
 ..................
 
 Fixed:
-- duplicate log entries when calling dirsync subsequently (#2)
+- duplicate log entries when calling d51_dirsync subsequently (#2)
 
 2.2.2 (29-02-2016)
 ..................
@@ -44,6 +44,10 @@ Added:
 
 2.2.5 (01-08-2020)
 ..................
+
+2.2.6 (02-08-2022)
+
+Added functionality to not recurse through a directory.
 
 Fixed:
 - Comparisons on windows

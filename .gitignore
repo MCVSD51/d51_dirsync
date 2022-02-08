@@ -11,7 +11,7 @@ dist
 MANIFEST
 
 # egg folder (when package is used as a buildout dev egg)
-dirsync.egg-info
+d51_dirsync.egg-info
 
 # coverage
 tests/.coverage

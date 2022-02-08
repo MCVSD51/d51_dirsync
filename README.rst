@@ -1,5 +1,7 @@
-dirsync
+d51_dirsync
 =======
+
+Based on dirsync by Thomas Khyn and robocopier by Anand B Pillai
 
 |copyright| 2014-2020 Thomas Khyn
 |copyright| 2003-2015 Anand B Pillai
@@ -8,7 +10,7 @@ Advanced directory tree synchronisation tool
 
 based on `Python robocopier`_ by Anand B Pillai
 
-If you like dirsync and find it useful, you may want to thank me and
+If you like d51_dirsync and find it useful, you may want to thank me and
 encourage future development by sending a few mBTC / mBCH / mBSV at this address:
 ``1EwENyR8RV6tMc1hsLTkPURtn5wJgaBfG9``.
 
@@ -17,11 +19,11 @@ Usage
 
 From the command line::
 
-   dirsync <sourcedir> <targetdir> [options]
+   d51_dirsync <sourcedir> <targetdir> [options]
 
 From python::
 
-   from dirsync import sync
+   from d51_dirsync import sync
    sync(sourcedir, targetdir, action, **options)
 
 
@@ -36,7 +38,7 @@ Chosing one option among the following ones is mandatory
 
 If you use one of the above options (e.g. ``sync``) most of the time, you
 may consider defining the ``action`` option in a `Configuration file`_ parsed
-by dirsync.
+by d51_dirsync.
 
 
 Additional Options
@@ -70,21 +72,21 @@ Configuration file
 
 .. note::
    Configuration files are only used when using the command line, and ignored
-   when dirsync is called from within Python.
+   when d51_dirsync is called from within Python.
 
 If you want to use predefined options all the time, or if you need specific
-options when 'dirsyncing' a specific source directory, dirsync looks for
+options when 'd51_dirsyncing' a specific source directory, d51_dirsync looks for
 two configuration files, by order or priority (the last takes precedence)::
 
-    ~/.dirsync
-    source/directory/.dirsync
+    ~/.d51_dirsync
+    source/directory/.d51_dirsync
 
 .. note::
-   A ~/.dirsync configuration file is automatically created the first time
-   dirsync is ran from the command line. It enables ``sync`` mode by default.
+   A ~/.d51_dirsync configuration file is automatically created the first time
+   d51_dirsync is ran from the command line. It enables ``sync`` mode by default.
 
 .. warning::
-   Any ``source/directory/.dirsync`` file is automatically excluded from the
+   Any ``source/directory/.d51_dirsync`` file is automatically excluded from the
    files to compare. You have to explicitly include using the ``--include``
    option it if you want it to be covered by the comparison.
 

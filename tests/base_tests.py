@@ -1,8 +1,8 @@
-from ._base import DirSyncTestCase
+from ._base import D51_DirSyncTestCase
 from . import trees
 
 
-class MkTreeTests(DirSyncTestCase):
+class MkTreeTests(D51_DirSyncTestCase):
 
     init_trees = (('src', trees.simple),)
 
