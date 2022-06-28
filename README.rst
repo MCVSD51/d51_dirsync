@@ -60,6 +60,7 @@ Additional Options
                         Synchronize ONLY different files.
                         At two-way synchronization source files content 
                         have priority if destination and source are existed
+--recursive, -r         If this is false, only files at the root of the path will synced.
 --ignore, -x patterns   Regex patterns to ignore
 --only, -o patterns     Regex patterns to include (exclude every other)
 --exclude, -e patterns  Regex patterns to exclude
