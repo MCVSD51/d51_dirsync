@@ -1,6 +1,7 @@
 """
 d51_dirsync
 Advanced directory tree synchronisation tool
+(c) 2022 Toby Farley
 (c) 2014-2020 Thomas Khyn
 (c) 2003-2015 Anand B Pillai
 MIT license (see LICENSE.txt)
@@ -30,9 +31,10 @@ setup(
     version=__version__,
     description='Advanced directory tree synchronisation tool',
     long_description=open(os.path.join('README.rst')).read(),
-    author='Thomas Khyn',
-    author_email='thomas@ksytek.com',
-    url='https://github.com/tkhyn/d51_dirsync/',
+    long_description_content_type='text/markdown',
+    author='Toby Farley',
+    author_email='toby.farley@d51schools.org',
+    url='https://github.com/MCVSD51/d51_dirsync',
     keywords=['directory', 'folder', 'update', 'synchronisation'],
     classifiers=[
         'Programming Language :: Python',

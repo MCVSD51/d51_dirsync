@@ -1,5 +1,5 @@
 """
-filesync's functions
+d51_dirsync's functions
 """
 
 from __future__ import print_function

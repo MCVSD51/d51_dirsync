@@ -1,5 +1,5 @@
 """
-filesync options list
+d51_dirsync options list
 """
 
 import os
@@ -156,13 +156,13 @@ class ArgParser(ArgumentParser):
     def load_cfg(self, src_dir):
         """
         Load defaults from configuration file:
-         - from the source/directory/.filesync file (prioritary)
-         - and/or a %HOME%/.filesync user config file
+         - from the source/directory/.d51_dirsync file (prioritary)
+         - and/or a %HOME%/.d51_dirsync user config file
         """
 
         # last files override previous ones
         cfg_files = [os.path.expanduser(USER_CFG_FILE),
-                     os.path.abspath(os.path.join(src_dir, '.filesync'))]
+                     os.path.abspath(os.path.join(src_dir, '.d51_dirsync'))]
 
         cfg = ConfigParser()
         cfg.read(cfg_files)

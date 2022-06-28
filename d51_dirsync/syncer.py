@@ -43,7 +43,7 @@ class Syncer(object):
         self.logger = options.get('logger', None)
         if not self.logger:
             # configure default logger to stdout
-            log = logging.getLogger('filesync')
+            log = logging.getLogger('d51_dirsync')
             log.setLevel(logging.INFO)
             if not log.handlers:
                 hdl = logging.StreamHandler(sys.stdout)
@@ -100,9 +100,9 @@ class Syncer(object):
         self._exclude = list(get_option('exclude'))
         self._include = get_option('include')
 
-        # excludes .filesync file by default, must explicitly be in include
+        # excludes .d51_dirsync file by default, must explicitly be in include
         # not to be excluded
-        self._exclude.append('^\.filesync$')
+        self._exclude.append('^\.d51_dirsync$')
 
         if not os.path.isdir(self._dir1):
             raise ValueError("Error: Source directory does not exist.")

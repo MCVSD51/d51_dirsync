@@ -4,9 +4,9 @@ Project versionning info
 
 import subprocess
 
-__pkg_name__ = 'filesync'
+__pkg_name__ = 'd51_dirsync'
 
-__version_info__ = (2, 2, 5, 'final', 0)
+__version_info__ = (2, 2, 7, 'final', 0)
 
 
 def get_version(version=__version_info__):
